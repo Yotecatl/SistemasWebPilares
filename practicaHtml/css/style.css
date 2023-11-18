@@ -1,0 +1,41 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    background-color: #A3A3A2;
+}
+
+main{
+    background-color: #868684;
+}
+
+footer{
+    background-color: #8f8f8d;
+}
+
+h2{
+    color:azure;
+}
+
+p{
+    color: rgb(87, 22, 11);
+}
+
+a.Ada{
+    width: 100px;
+    height: 100px;
+}
+img.Joan{
+    width: 100px;
+    height: 100px;
+}
+img.Kat{
+    width: 100px;
+    height: 100px;
+}
+img.redes{
+    width: 20px;
+    height: 20px;
+}
