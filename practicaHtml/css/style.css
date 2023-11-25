@@ -1,18 +1,30 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 header{
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #A3A3A2;
 }
 
 main{
-    background-color: #868684;
+    background-color: #9d9d9c;
+    padding-top: 20px;
 }
 
 footer{
+    padding-bottom: 5px;
+    position: relative;
+    width: 100%;
     background-color: #8f8f8d;
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #787878;
 }
 
 h2{
@@ -21,21 +33,48 @@ h2{
 
 p{
     color: rgb(87, 22, 11);
+    text-align: center;
+    font-size: 20px;
 }
 
-a.Ada{
-    width: 100px;
-    height: 100px;
+img.Ada{
+    position: relative;
+    left: 40%;
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
 }
 img.Joan{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 20%;
+    border-radius: 50%;
+    border: 2px solid rgb(235, 232, 232);
 }
 img.Kat{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 66%;
+    border-radius: 50%;
+    border: 2px solid rgb(235, 232, 232);
 }
 img.redes{
     width: 20px;
     height: 20px;
+}
+
+#redes{
+    padding: 5px;
+    position: relative;
+    left: 48%;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h2, h6 {
+    text-align: center;
 }
