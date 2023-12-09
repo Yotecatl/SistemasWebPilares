@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header*/
+
+header{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+}
+
+.titulo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.headerimg{
+    justify-content: flex-start;
+}
+
+.ttcontenido{ 
+}
+
+
+/*boton*/
+.morado{
+    background-color: rgb(116, 77, 224);
+    margin: 20px;
+    padding: 5px 10px;
+    border-radius: 30%;
+    color: aliceblue;
+
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 10px;
+}
+
+
+
+/*Main*/
+
+
+/*baner*/
+.baner{
+    background-color: rgb(116, 77, 224);
+    color:aliceblue;
+    padding: 20px 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.btncortinilla{
+    background-color: rgb(116, 77, 224);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 30%;
+    color: aliceblue;
+}
+
+.btnbaner{
+    background-color: aliceblue;
+    margin: 20px;
+    padding: 5px 10px;
+    border-radius: 30%;
+}
+
+
+
+/*footer*/
+
+footer{
+    background-color: rgb(24, 23, 23);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.pie{
+    
+}
+
+
+
+img.best{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+img.redes{
+    width: 20px;
+    height: 20px;
+    background-color: aliceblue;
+}
