@@ -42,10 +42,29 @@ h1{
     font-weight: 10px;
 }
 
+h4{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 10px;
+    font-size: 25px;
+}
+
+h5{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 10px;
+    font-size: 18px;
+}
 
 
 /*Main*/
-
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
 /*baner*/
 .baner{
@@ -72,6 +91,39 @@ h1{
     border-radius: 30%;
 }
 
+.cortinillas{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.cortinilla{
+    display: flex;
+    flex-direction:row;
+    align-content: flex-start; 
+}
+
+.best{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+
+}
+
+.cards{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    
+}
+
 
 
 /*footer*/
@@ -84,20 +136,43 @@ footer{
 }
 
 .pie{
-    
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
 }
 
+.redes{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
 
+.index{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
 
-img.best{
+img.imgbest{
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
 
 
-img.redes{
+img.logosRedes{
+    margin-right: 10px;
+    padding: 10px;
     width: 20px;
     height: 20px;
     background-color: aliceblue;
+}
+
+.buscador{
+    padding-top: 40px;
+
 }
