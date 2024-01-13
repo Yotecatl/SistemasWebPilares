@@ -1,0 +1,41 @@
+.grid-container{
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-row-align: 5px;
+    -ms-grid-column-aling: 5px;
+
+    grid-template-areas:
+    " area1 area1 area1 area1 area1"
+    "area2 area2 . area3 area3" /* el punto no asigna area*/
+    "area2 area2 area4 area4 area4";
+}
+
+.grid-item1{
+    background: rebeccapurple;
+    text-align: center;
+    border:black 5px solid;
+    grid-area: area1;
+}
+    
+
+.grid-item2{
+    background: rgb(151, 178, 53);
+    text-align: center;
+    border:black 5px solid;
+    grid-area: area2;
+}
+
+.grid-item3{
+    background: rgb(41, 74, 143);
+    text-align: center;
+    border:black 5px solid;
+    grid-area: area3;
+}
+
+.grid-item4{
+    background: rgb(139, 41, 184);
+    text-align: center;
+    border:black 5px solid;
+    grid-area: area4;
+}

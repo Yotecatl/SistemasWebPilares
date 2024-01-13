@@ -1,0 +1,110 @@
+.grid-container{
+    display: grid;
+    grid-template-rows: 50px 800px 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-row-align: 5px;
+    -ms-grid-column-aling: 5px;
+
+    grid-template-areas:
+    " area1 area1 area1 area1 area1 area1"
+    "area2 area2 area2 area2 area3 area3"
+    "area4 area4 area4 area4 area4 area4";
+}
+
+.grid-item1{
+    background: rebeccapurple;
+    text-align: center;
+    border:black 5px solid;
+    grid-area: area1;
+}
+    
+
+.grid-item2{
+    background: rgb(151, 178, 53);
+    text-align: center;
+    border:black 5px solid;
+    grid-area: area2;
+}
+
+.grid-item3{
+    background: rgb(41, 74, 143);
+    text-align: center;
+    border:black 5px solid;
+    grid-area: area3;
+}
+
+.grid-item4{
+    background: rgb(139, 41, 184);
+    text-align: center;
+    border:black 5px solid;
+    grid-area: area4;
+}
+
+
+.nav{
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.imgnav{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+.main{
+    display: grid;
+    grid-template-rows: 80px 710px;
+    grid-template-columns: 1fr;
+
+    grid-template-areas: 
+    "area5"
+    "area6";
+}
+.grid-item5{
+    background: rgb(156, 31, 100);
+    text-align:center;
+    border:black 5px solid;
+    grid-area: area5;
+}
+
+.grid-item6{
+    background: rgb(176, 158, 25);
+    text-align: center;
+    border:black 5px solid;
+    grid-area: area6;
+}
+
+.pernav{
+    display: grid;
+    grid-template-rows: 80px;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: 
+    "area7"
+    "area8";
+}
+
+.peqimg{
+    display: grid;
+    grid-template-rows: 80px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.imgperfil{
+    height: 100px;
+    width: 100px;
+}
+
+.imgiconos{
+    height: 30px;
+    width: 30px;
+}
+
+.imgpq{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;   
+}
