@@ -1,3 +1,7 @@
+
+/*Definimos las sección principal
+hay que expecificar cada area a utilizar, aunque no se utilice
+para apartar el espacio con .*/
 .grid-container{
     display: grid;
     grid-template-rows: 50px 800px 30px;
@@ -11,6 +15,7 @@
     "area4 area4 area4 area4 area4 area4";
 }
 
+/*Definimos cada una de las areas como un item*/
 .grid-item1{
     background: rebeccapurple;
     text-align: center;
@@ -51,6 +56,8 @@
     height: 40px;
     width: 40px;
     border-radius: 50%;
+
+    justify-self: flex-end;
 }
 
 
@@ -77,6 +84,7 @@
     grid-area: area6;
 }
 
+
 .pernav{
     display: grid;
     grid-template-rows: 80px;
@@ -87,10 +95,17 @@
     "area8";
 }
 
+.grid-item7{
+    background: rgb(176, 158, 25);
+    text-align: left;
+    grid-area: area7;
+}
+
 .peqimg{
     display: grid;
     grid-template-rows: 80px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-self: center;
 }
 
 .imgperfil{
@@ -107,4 +122,161 @@
     height: 60px;
     width: 60px;
     border-radius: 50px;   
+}
+
+.imgAside{
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.Aside{
+    display: grid;
+    grid-template-rows: 100px 40px 50px 50px;
+    grid-template-columns: 1fr 1fr;
+    width: 800px;
+
+    grid-template-areas:
+    "area1A area2A"
+    "area3A ."
+    "area4A area5A"
+    "area6A area7A";
+}
+
+.grid-item10{
+    background: rgb(212, 141, 146);
+    text-align: center;
+    border:rgb(210, 34, 34) 5px solid;
+    grid-area: area1A;
+    justify-self: start;
+}
+    
+
+.grid-item11{
+    background: rgb(129, 209, 203);
+    text-align: center;
+    border:rgb(185, 76, 76) 5px solid;
+    grid-area: area2A;
+}
+
+.grid-item12{
+    background: rgb(212, 141, 146);
+    text-align: center;
+    border:rgb(210, 34, 34) 5px solid;
+    grid-area: area3A;
+    justify-self: start;
+}
+
+.parte1{
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.txt1part1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+}
+
+.txt2part1{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    align-self: center;
+}
+
+.txtpart2{
+    align-self: center;
+}
+
+
+.grid-item13{
+    background: rgb(129, 209, 203);
+    text-align: center;
+    border:rgb(185, 76, 76) 5px solid;
+    grid-area: area4A;
+}
+
+.parte2{
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 40px 1fr;
+    justify-self: start;
+
+}
+
+.imgpart2{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+
+    grid-column: 1/2;
+    grid-row: 1/2;
+    
+
+}
+
+.txtpart3{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: self-start;
+}
+
+
+
+
+.grid-item14{
+    background: rgb(212, 141, 146);
+    text-align: center;
+    border:rgb(210, 34, 34) 5px solid;
+    grid-area: area5A;
+    align-self: center;
+}
+
+
+
+.grid-item15{
+    background: rgb(212, 141, 146);
+    text-align: center;
+    border:rgb(210, 34, 34) 5px solid;
+    grid-area: area6A;
+    align-self: center;
+    pa
+}
+
+.parte4{
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 40px 1fr;
+    justify-self: start;
+
+}
+
+.imgpart4{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+
+    grid-column: 1/2;
+    grid-row: 1/2;
+    
+
+}
+
+.txtpart4{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: self-start;
+}
+
+
+.grid-item16{
+    background: rgb(212, 141, 146);
+    text-align: center;
+    border:rgb(210, 34, 34) 5px solid;
+    grid-area: area7A;
+    align-self: center;
 }
