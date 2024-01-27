@@ -7,3 +7,14 @@ p{
     color:rgb(40, 40, 40);
     font-size: 22px;
 }
+
+.pieImgs{
+    margin-left: 50px;
+}
+
+.imgredes{
+    width: 25px;
+    height: 25px;
+    background-color: aliceblue;
+    margin: 5px;
+}
