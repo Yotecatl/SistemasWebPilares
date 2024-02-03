@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document DOM Colores</title>
+</head>
+<body>
+    <div style="margin: 0.5in; height: 400;">
+        <p>
+            <b><tt>Texto</tt></b>
+        </p>
+        <form>
+            <select onChange ="setBodyAttr('text', this.options[this.selectedIndex].value);">
+                    <option value="black">negro</option>
+                    <option value="darkblue">azul oscuro</option>
+            </select>
+           
+            <p>
+            <b><tt>bgColor</tt></b>
+           </p>
+
+           <select onChange ="setBodyAttr('bgColor', this.options[this.selectedIndex].value);">
+            <option value="white">blanco</option>
+            <option value="lightgrey">gris</option>
+           </select>
+   
+            <p>
+            <b><tt>link</tt></b>
+            </p>
+
+           <select onChange ="setBodyAttr('link', this.options[this.selectedIndex].value);">
+            <option value="blue">azul</option>
+            <option value="green">verde</option>
+           </select>
+            <small>
+                <a href="https://intef.es/" id ="sample" target="_blank">(sample link)</a>
+            </small>
+            <br/>
+        </form>
+
+        <form>
+            <input type="button" value="version" onclick="ver()">
+        </form>
+
+    </div>
+
+    
+</body>
+<script src="./js/main.js"></script>
+</html>
