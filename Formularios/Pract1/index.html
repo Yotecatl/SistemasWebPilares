@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form p1</title>
+</head>
+<body>
+    <br><br>
+    <fieldset>
+        <legend>Datos</legend>
+        <form>
+            <!--for debe ser igual al id para relacionarse-->
+            <label for="animal">¿Cúal es tu animal favorito? </label>
+            <input type="text" id="animal" name="animal"/>
+            <br>
+            <label for="usuario">¿Cúal es tu nombre? </label>
+            <input type="text"  name="usuario"/>
+            <br>
+            <label for="contaseña">Contraseña </label>
+            <input type="password" name="contrseña"/>
+            <br>
+            <label for="correo">correo </label>
+            <input type="email" name="correo"/>
+            <br>
+            <label for="telefono">telefono </label>
+            <input type="tel" name="telefono"/>
+            <br>
+            <label for="añosCum">edad</label>
+            <input type="number" name="añosCum"/>
+            <br>
+            <label for="photo">Foto</label>
+            <input type="file" id="photo" name="photo"/>
+    
+            <button>Guardar</button>
+        </form>
+    
+    </fieldset>
+    
+    <br><br>
+
+    <div class="wrapper">
+        <form action="https://codepen.io/web-dot-dev/pen/a9ec1be360c53c5284da27a92fbd7248" target="_blank">
+            <div>
+                <label for="mountain">¿Cúal es la montaña más alta de Africa?</label>
+                <input type="text" id="mountain" name="mountain">
+            </div>
+            <button>Guardar</button>
+        </form>
+    </div>
+
+    <br><br>
+
+    <fieldset>
+        <legend>Suscribete</legend>
+        <div>
+            <form>
+                <div>
+                    <input type="checkbox" id="suscribete1" name="suscribete" value="web.dev">
+                    <label for="suscribete">Suscribete a la web.dev</label>
+                    <br>
+                    <input type="checkbox" id="suscribete2" name="suscribete" value="open.oi">
+                    <label for="suscribete">Suscribete a open.oi</label>
+                    <br>
+                    <input type="checkbox" id="suscribete3" name="suscribete" value="pilares">
+                    <label for="suscribete">Suscribete a pilares</label>
+                    <br>
+                    <input type="checkbox" id="suscribete4" name="suscribete" value="vacaciones">
+                    <label for="suscribete">Suscribete a vacaciones</label>
+                    <br>
+                </div>
+                <button>Salvar</button>
+            </form>
+        </div>
+    
+    </fieldset>
+    
+    <br><br>
+
+    <fieldset>
+        <legend>Formas dee pago</legend>
+        <form action="">
+            <input type="radio" id="pago1" name="madio-de-pago" value="Efectivo">
+            <label for="pago1">Efectivo</label>
+            <br>
+            <input type="radio" id="pago2" name="madio-de-pago" value="Debito">
+            <label for="pago2">Debito</label>
+            <br>
+            <input type="radio" id="pago3" name="madio-de-pago" value="Credito">
+            <label for="pago3">Efectivo</label>
+            <br>
+        </form>
+    </fieldset>
+    
+    <br><br>
+
+    <form action="">
+        <label for="comment">Comentarios</label>
+        <textarea id="comment" name="comment"></textarea>
+    </form>
+
+    <br><br>
+    
+    <fieldset>
+        <legend>¿Cúal es tu color favorito?</legend>
+        <form action="">
+            <div>
+                <label for="color">¿Cúal es tu color favorito?</label>
+                <select name="color" id="color">
+                    <option value="orange">Orange</option>
+                    <option selected value="pink">Pink</option>
+                </select>
+            </div>
+            <button>Guardar</button>
+        </form>
+    
+    </fieldset>
+    
+</body>
+</html>

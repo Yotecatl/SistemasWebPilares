@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Js</title>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <form>
+                <div>
+                    <fieldset>
+                        <legend>What is your favorite web Technology</legend>
+                        <input type="radio" name="webfeature" value="html" id="html" class="radioField" data-controls="html-additional">
+                        <label for="html">HTML</label>
+                        <div class="additional" id="html-additional">
+                            <label for="html-additional">What is your favorite HTML element?</label>
+                            <input type="text" id="html-additional" name="html-additional">
+                        </div>
+                        <input type="radio" name="webfeature" value="css" id="css" class="radioField" data-controls="css-additional">
+                        <label for="css">CSS</label>
+                        <div class="additional" id="css-additional">
+                            <label for="css-additional">Whats is your favorite CSS property?</label>
+                            <input type="text" id="css-additional" name ="css-additional">
+                        </div>
+                    </fieldset>
+                </div>
+                <button>Save</button>
+            </form>
+        </div>
+    </main>
+</body>
+<script src="./js/main2.js"></script>
+</html>
