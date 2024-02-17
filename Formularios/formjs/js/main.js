@@ -10,7 +10,7 @@ if(additionalFields && additionalFields.length > 0){
 if (radioFields && radioFields.length > 0){
     [...radioFields].forEach((radioField) => {
         radioField.setAttribute("aria-expanded", false);
-        radioField.setAttribute("aria-contros", radioField.dataset.controls);
+        radioField.setAttribute("aria-controls", radioField.dataset.controls);
 
         radioField.addEventListener("click", (event) => {
             const additionalField = document.getElementById(
