@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Validando formularios</title>
+</head>
+<body>
+    <form action="">
+        <label for="choose">¿Prefieres platano o cereza?</label>
+        <input id="choose" name ="I_like" required>
+        <button>Enviar</button>
+    </form>
+    <br><br>
+    <form action="">
+        <label for="choose">¿Prefieres platano o cereza?</label>
+        <input id="choose" name ="I_like" required pattern="[Pp]látano|[Cc]ereza">
+        <button>Enviar</button>
+    </form>
+    <br><br>
+    <form action="">
+        <div>
+            <label for="choose">¿Prefieres platano o cereza?</label>
+            <input id="choose" name ="I_like" required minlength="6" maxlength="7">
+        </div>
+
+        <div>
+            <label for="choose">¿Cuántos te gustaría comer?</label>
+            <input type="number" id="number" name ="amount" value="1" min="1" max="10">
+        </div>
+        <div>
+            <button>Enviar</button>
+        </div>
+        
+    </form>
+</body>
+</html>
