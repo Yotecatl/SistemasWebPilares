@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <fieldset>
+        <legend>Datos</legend>
+        <form>
+            <!--for debe ser igual al id para relacionarse-->
+            <label for="productos">Ingresar producto </label>
+            <input type="text" id="productos" name="producto" required value="assetesPro01"/>
+            <br>
+            <label for="precios">Ingresar precio </label>
+            <input type="number" id="precios" name="precio" required value="10" class="precios" />
+            <br><br>
+
+            <label for="productos">Ingresar producto </label>
+            <input type="text" id="productos" name="producto" required value="assetesPro01"/>
+            <br>
+            <label for="precios">Ingresar precio </label>
+            <input type="number" id="precios" name="precio" required value="10" class="precios" />
+            <br><br>
+            <!--
+            <label for="usuario"> </label>
+            <input type="text"  name="usuario"/>
+            <br>
+            <label for="contaseña">Contraseña </label>
+            <input type="password" name="contrseña"/>
+            <br>
+            <label for="correo">correo </label>
+            <input type="email" name="correo"/>
+            <br>
+            <label for="telefono">telefono </label>
+            <input type="tel" name="telefono"/>
+            <br>
+            <label for="añosCum">edad</label>
+            <input type="number" name="añosCum"/>
+            <br>
+            <label for="photo">Foto</label>
+            <input type="file" id="photo" name="photo"/>
+            -->
+    
+            <button type="submit">Guardar</button>
+        </form>
+
+        <p id="total">Total: </p>
+    
+    </fieldset>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+</body>
+    <script src="./js/main.js"></script>
+</html>
