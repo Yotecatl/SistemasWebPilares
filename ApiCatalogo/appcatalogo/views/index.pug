@@ -1,0 +1,19 @@
+html
+  head
+    title= title
+  body
+    h1= message
+    form(action="/", method="post")
+    p 
+    | Articulo  
+    input(type="text", value="articulo")
+    br
+    | Existencias   
+    input(type="number", value="cantidad")
+    br
+    | Id   
+    input(type="number", value="id")
+    br
+    input(type="submit", value="enviar")
+    br
+    // El | es para colocar texto 
