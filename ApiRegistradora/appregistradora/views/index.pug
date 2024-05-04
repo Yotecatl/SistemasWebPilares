@@ -1,0 +1,20 @@
+html
+  head
+    title= title
+  body
+    h1= message
+    form(action="/", method="post")
+    p
+    | Id:   
+    input(type="number", value="id")
+    br 
+    | Articulo:  
+    input(type="text", value="articulo")
+    br
+    | Existencias:   
+    input(type="number", value="cantidad")
+    br
+    
+    input(type="submit", value="guardar")
+    br
+    br
