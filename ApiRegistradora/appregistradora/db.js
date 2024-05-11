@@ -5,13 +5,18 @@ module.exports = [
       "cantidad": "12"
    },
    {
-      "id": "1",
+      "id": "2",
       "articulo": "jabon",
       "cantidad": "23"
    },
    {
-      "id": "2",
+      "id": "3",
       "articulo": "papel",
       "cantidad": "45"
+   },
+   {
+      "id": "4",
+      "articulo": "refresco",
+      "cantidad": "54"
    }
 ];

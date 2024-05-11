@@ -1,0 +1,17 @@
+
+html
+  head
+    title Inventario
+  body
+    h1 lista de Articulos 
+    ul 
+        each obj in objetos 
+            li 
+                span = obj.articulo
+                form(action=`/eliminar/${obj.id}`, method='POST') 
+                    input(type='hidden', name='_method', value='delete')
+                    button(type='submit') Eliminar
+
+
+                    //form(action=`/eliminar/${obj.id}?_method = DELETE`, method='POST')
+                    
