@@ -1,62 +1,47 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require("express");
+const app = express();
+const fs = require("fs");
+const path = require("path");
+const port = 3000;
 
-//cargamos el motor
-app.set('view engine', 'pug')
-
-app.get('/', (req, res) => {
-    res.render('index', { title: 'Inventario', message: 'Inventario Articulos' })
-  })
-
-//link al db.js 
-let db = require('./db')
-//cargar los datos al json
+// parse JSON con express
 app.use(express.json());
-app.use(express.urlencoded({extended:false}));
+app.use(express.urlencoded({ extended: true }));
 
-//mostar la db usando middlleware
-app.get('/db', (req, res) => {
-  res.json(catalogo);
+app.set("view engine", "pug");
+app.set("views", path.join(__dirname, "views"));
+
+//var db = require("./db.js");
+// mostrar formulario para agregar producto
+app.get("/index", (req, res) => {
+  res.render("index");
+});
+// mostrar catalogo
+app.get("/mostrar_db", (req, res) => {
+  const db = require("./db.js");
+  res.json(db);
 });
 
-
-//agregar articulo
-app.post('/db', (req, res) => {
-  const articulo = req.body;
-  catalogo.push(articulo);
-  console.log(articulo);
-  res.send("Articulo agregado");
+//mostrar formulario para eliminar producto.
+app.get("/eliminar", (req, res) => {
+  res.render("eliminar");
 });
 
-//buscar articulo
-app.get('/db/:id', (req, res) => {
-  const id = req.params.id;
-  for (let articulo of catalogo) {
-      if(articulo.id == id){
-          res.json(articulo);
-          return;
-      } 
-  }
-  res.status(404).send("articulo no enconterado");
+// agregar producto
+app.post("/guardar", (req, res, next) => {
+  const { id, articulo, cantidad } = req.body;
+
+  const productInfo = { id, articulo, cantidad };
+  const catalogo = require("./db.js");
+  console.log(productInfo);
+  catalogo.push(productInfo);
+  fs.writeFileSync(
+    "./db.js",
+    `module.exports = ${JSON.stringify(catalogo, null, 3)};`
+  );
+  res.send("Producto Agregado");
 });
-
-//eliminar articulo
-app.delete('/db/:id', (req, res) => {
-  const id = req.params.id;
-  catalogo = catalogo.filter((articulo)=> {
-      if(articulo.id != id){
-          return true;
-      }
-      return false;
-  });
-  res.send("articulo eliminado");
-});
-
-//Comprar articulo
-
-
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+    console.log(`Example app listening on port ${port}`)
 })

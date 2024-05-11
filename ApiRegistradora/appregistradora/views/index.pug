@@ -1,20 +1,18 @@
+doctype html
 html
   head
-    title= title
+    title Inventario
   body
-    h1= message
-    form(action="/", method="post")
-    p
-    | Id:   
-    input(type="number", value="id")
-    br 
-    | Articulo:  
-    input(type="text", value="articulo")
-    br
-    | Existencias:   
-    input(type="number", value="cantidad")
-    br
+    h1 Catalogo
+    form(action='/guardar', method='post')
+      label(for='id') No. Id: 
+      input(type='text', name='id')
+      br 
+      label(for='articulo') Articulo:  
+      input(type='text', name='articulo')
+      br
+      label(for='cantidad') Cantidad:     
+      input(type='number', name='cantidad')
+      br
+      input(type='submit', value='Guardar')
     
-    input(type="submit", value="guardar")
-    br
-    br
